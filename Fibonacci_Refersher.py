@@ -18,7 +18,7 @@ def main():
 
     if args.output:
         f = open("fibonacci.txt", "x")
-        f.write(str(result)+'\n',"Do you want to overwirte fibonacci.txt")
+        f.write(str(result)+'\n')
         f.close()
 
 if __name__ == '__main__':
