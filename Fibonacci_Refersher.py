@@ -14,7 +14,7 @@ def main():
     parser.add_argument("-o", "--output", help="Output result to a file.", action="store_true")
     args = parser.parse_args()
     result = fibonacci(args.num)
-    print("The "+str(args.num)+"Nth fibonacci number is "+str(result))
+    print("The "+str(args.num)+"th fibonacci number is "+str(result))
 
     if args.output:
         f = open("fibonacci.txt", "a")
