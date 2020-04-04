@@ -17,8 +17,8 @@ def main():
     print("The "+str(args.num)+"th fibonacci number is "+str(result))
 
     if args.output:
-        f = open("fibonacci.txt", "a")
-        f.write(str(result)+'\n')
+        f = open("fibonacci.txt", "x")
+        f.write(str(result)+'\n',"Do you want to overwirte fibonacci.txt")
         f.close()
 
 if __name__ == '__main__':
